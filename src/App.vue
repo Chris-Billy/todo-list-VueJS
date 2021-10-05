@@ -16,12 +16,6 @@ export default {
     TodoList,
     Horloge
   },
-  
-  data() {
-    return {
-      task: ''
-    };
-  },
 };
 </script>
 

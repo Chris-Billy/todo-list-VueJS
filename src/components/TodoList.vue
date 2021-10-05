@@ -35,6 +35,7 @@ export default {
   },
   data() {
     return {
+      task: '',
       todoList: [
         {
           task: "test",
@@ -42,9 +43,6 @@ export default {
         },
       ],
     };
-  },
-  props: {
-    task: String,
   },
   methods: {
     addTask: function(task) {
@@ -55,7 +53,6 @@ export default {
       this.task = "";
     },
     deleteTask: function(index) {
-      console.log(this)
       this.todoList.splice(index, 1);
     },
   },
