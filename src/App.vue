@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Horloge />
+    <Horloge id="horloge" />
     <br>
     <TodoList />
   </div>
@@ -33,5 +33,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#horloge {
+  font-size: 35px
 }
 </style>

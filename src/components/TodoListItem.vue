@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>{{ task.task }}</span>
-    <button @click="deleteTask">Supprimer</button>
+    <button @click="deleteTask">Supprimer<i class="fa fa-minus-circle" aria-hidden="true"></i></button>
     <button @click="task.done = !task.done">Done</button>
   </div>
 </template>
@@ -19,12 +19,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-div {
-  margin-bottom: 10px;
-}
-button {
-  margin-left: 10px
-}
-</style>
